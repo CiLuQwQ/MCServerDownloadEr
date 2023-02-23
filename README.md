@@ -20,7 +20,7 @@ MohistMC FabricMC使用了官网API
 该程序在 [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html) 下分发
 
 附带附加条款
-[依据 GNU GPLv3第7条(b)](https://github.com/7777a2333/MCServerDownloader/blob/main/LICENSE#L368-L370)
+[依据 GNU GPLv3第7条(b)](https://github.com/7777a2333/MCServerDownloadEr/blob/master/LICENSE#L368-L370)
 你**不得**移除本程序所显示的版权声明。
 
 ### 使用的开源项目
