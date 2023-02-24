@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MCServerDownloadEr:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MCServerDownloadEr_jar</output-path>
+    <root id="archive" name="MCServerDownloadEr.jar">
+      <element id="module-output" name="MCServerDownloadEr" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/acgist/snail/1.17.1/snail-1.17.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
