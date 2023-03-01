@@ -22,6 +22,7 @@ public class Main {
 		System.out.println("输入你要下载的服务端序号:)");
 		System.out.println("1   原版服务端   2 Purpur服务端(Paper分支)  3    Spigot服务端   4 CraftBukkit服务端");
 		System.out.println("5   MohistMC   6 Fabric服务端            7    远古版本服务端   8 PowerNukkitX基岩版服务端");
+		System.out.println("9   基岩版官方服务端(仅Windows 需要解压)");
 		int type = Enter.nextInt();
 		//要求输入服务端类型
 		switch (type) {
@@ -30,7 +31,7 @@ public class Main {
 				serverVersion = Enter.next();
 				//要求输入服务端版本,并保存到服务端版本变量内
 				System.out.println("选择你要使用的镜像源:(填序号)");
-				System.out.println("1 Mojang源 2 BMCLAPI源 3 MCBBS源");
+				System.out.println("1 Mojang源(海外) 2 BMCLAPI源(国内) 3 MCBBS源(国内)");
 				int a = Enter.nextInt();
 				//输入下载源编号
 				switch (a) {
@@ -89,8 +90,8 @@ public class Main {
 				//要求输入服务端版本,并保存到服务端版本变量内
 
 				System.out.println("输入要下载的Fabric版本(可使用启动器查看或输入'0.14.13')");
-				String Fabric版本 = Enter.next();
-				downloadLink = "https://meta.fabricmc.net/v2/versions/loader/" + serverVersion + "/" + Fabric版本 + "/0.11.1/server/jar";
+				String fabricVersion = Enter.next();
+				downloadLink = "https://meta.fabricmc.net/v2/versions/loader/" + serverVersion + "/" + fabricVersion + "/0.11.1/server/jar";
 			}
 			//下载服务端并变量
 			case 7 -> {
@@ -107,6 +108,11 @@ public class Main {
 				System.out.println("将下载PNX-CLI-0.0.8");
 				downloadLink = "https://github.com/PowerNukkitX/PNX-CLI/releases/download/0.0.8/PNX-CLI-0.0.8.jar";
 			}
+			case 9 ->{
+				System.out.println("请输入服务端版本(如1.19.63.01)");
+				serverVersion = Enter.next();
+				downloadLink = "https://minecraft.azureedge.net/bin-win/bedrock-server-" + serverVersion + ".zip";
+			}
 		}
 		//判断服务端类型
 		System.out.println("下载中，请稍后");
@@ -117,7 +123,7 @@ public class Main {
 		}
 		// 等待下载完成
 		snail.lockDownload();
-		System.out.println("下载完成,在download目录里");
+		System.out.println("下载完成,服务端在download目录里");
 		System.out.println("<按回车键退出...>");
 		Enter.next();
 		//EXIT
