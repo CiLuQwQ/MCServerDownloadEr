@@ -1,7 +1,7 @@
-import com.acgist.snail.Snail;
-import com.acgist.snail.context.exception.DownloadException;
 
 import java.util.Scanner;
+import com.acgist.snail.*;
+import com.acgist.snail.context.exception.DownloadException;
 
 public class Main {
 	public static void main(String[] args) {
@@ -124,7 +124,7 @@ public class Main {
 		// 等待下载完成
 		snail.lockDownload();
 		System.out.println("下载完成,服务端在download目录里");
-		System.out.println("<按回车键退出...>");
+		System.out.println("<输入任意字符并按回车键退出...>");
 		Enter.next();
 		//EXIT
 	}
