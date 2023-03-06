@@ -22,7 +22,7 @@ public class Main {
 		System.out.println("输入你要下载的服务端序号:)");
 		System.out.println("1   原版服务端   2 Purpur服务端(Paper分支)  3    Spigot服务端   4 CraftBukkit服务端");
 		System.out.println("5   MohistMC   6 Fabric服务端            7    远古版本服务端   8 PowerNukkitX基岩版服务端");
-		System.out.println("9   基岩版官方服务端(仅Windows 需要解压)");
+		System.out.println("9   基岩版官方服务端(仅Windows 需要解压) 10 Forge安装器");
 		int type = Enter.nextInt();
 		//要求输入服务端类型
 		switch (type) {
@@ -112,6 +112,15 @@ public class Main {
 				System.out.println("请输入服务端版本(如1.19.63.01)");
 				serverVersion = Enter.next();
 				downloadLink = "https://minecraft.azureedge.net/bin-win/bedrock-server-" + serverVersion + ".zip";
+			}
+			case 10->{
+				System.out.println("输入要下载的版本号(1.1及以上)");
+				serverVersion = Enter.next();
+				//要求输入服务端版本,并保存到服务端版本变量内
+
+				System.out.println("输入要下载的Forge版本(可使用启动器查看)");
+				String forgeVersion = Enter.next();
+				downloadLink = "https://maven.minecraftforge.net/net/minecraftforge/forge/" + serverVersion +"-" + forgeVersion +"/forge-"  + serverVersion + "-" + forgeVersion +"-installer.jar";
 			}
 		}
 		//判断服务端类型
