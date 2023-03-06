@@ -9,8 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5e1d5f7-313f-4e58-9235-07a56aeedc16" name="变更" comment="fgvf">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e5e1d5f7-313f-4e58-9235-07a56aeedc16" name="变更" comment="abab">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/API.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/API.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +99,7 @@
       <workItem from="1677241456248" duration="2427000" />
       <workItem from="1677644150443" duration="5279000" />
       <workItem from="1677729279451" duration="2500000" />
-      <workItem from="1678106913974" duration="848000" />
+      <workItem from="1678106913974" duration="1968000" />
     </task>
     <task id="LOCAL-00001" summary="fgvf">
       <created>1677243230591</created>
@@ -120,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677730298415</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="abab">
+      <created>1678107982535</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678107982535</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +149,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fgvf" />
-    <option name="LAST_COMMIT_MESSAGE" value="fgvf" />
+    <MESSAGE value="abab" />
+    <option name="LAST_COMMIT_MESSAGE" value="abab" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

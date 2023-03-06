@@ -13,7 +13,7 @@ public class Main {
 		Scanner Enter = new Scanner(System.in);
 		boolean cdn;
 		//初始化
-		System.out.println("MC服务端下载器[新] 1.0.0");
+		System.out.println("MC服务端下载器[新] 1.1.0");
 		System.out.println("采用GNU GPLv3协议分发,并含有附加条款");
 		System.out.println("原版服务端国内源由BMCLAPI和MCBBS提供高速下载服务.BMCLAPI为公益服务.赞助BMCLAPI可以帮助作者提供更好的高速下载服务");
 		System.out.println("赞助BMCLAPI:https://afdian.net/a/bangbang93");
