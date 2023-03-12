@@ -1,3 +1,4 @@
+package github._7777a2333_.MCServerDownloadEr.Main;
 
 import java.util.Scanner;
 import com.acgist.snail.*;
