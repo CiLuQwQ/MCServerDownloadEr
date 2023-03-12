@@ -12,10 +12,8 @@
 [依据 GNU GPLv3第7条(b)](https://github.com/7777a2333/MCServerDownloadEr/blob/master/LICENSE#L368-L370)
 你**不得**移除本程序所显示的版权声明。
 ## 跑
-确保配置了Maven环境，在项目文件夹运行
-```shell
-mvn install
-```
+使用idea打开项目，会自动下载Maven依赖项
+
 如果想要打包Jar，就运行
 ```shell
 mvn package

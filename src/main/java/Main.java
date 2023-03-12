@@ -9,8 +9,8 @@ public class Main {
 				.enableAllProtocol()
 				.buildSync();
 		//初始化蜗牛
-		String serverVersion, downloadLink = null,  oldVersion;
-		Scanner Enter = new Scanner(System.in);
+		String serverVersion, downloadLink = null,  legacyServer;
+		Scanner enter = new Scanner(System.in);
 		boolean cdn;
 		//初始化
 		System.out.println("MC服务端下载器[新] 1.1.0");
@@ -23,16 +23,17 @@ public class Main {
 		System.out.println("1   原版服务端   2 Purpur服务端(Paper分支)  3    Spigot服务端   4 CraftBukkit服务端");
 		System.out.println("5   MohistMC   6 Fabric服务端            7    远古版本服务端   8 PowerNukkitX基岩版服务端");
 		System.out.println("9   基岩版官方服务端(仅Windows 需要解压) 10 Forge安装器");
-		int type = Enter.nextInt();
+		int type = enter.nextInt();
 		//要求输入服务端类型
 		switch (type) {
+			case default -> System.out.println("输入错误!");
 			case 1 -> {
 				System.out.println("输入要下载的服务端版本号(正式版1.2.5及以上 快照13w16a以上)");
-				serverVersion = Enter.next();
+				serverVersion = enter.next();
 				//要求输入服务端版本,并保存到服务端版本变量内
 				System.out.println("选择你要使用的镜像源:(填序号)");
 				System.out.println("1 Mojang源(海外) 2 BMCLAPI源(国内) 3 MCBBS源(国内)");
-				int a = Enter.nextInt();
+				int a = enter.nextInt();
 				//输入下载源编号
 				switch (a) {
 					case 1 -> downloadLink = "https://www.mcjars.com/get/vanilla-" + serverVersion + ".jar";
@@ -42,17 +43,17 @@ public class Main {
 			}
 			case 2 -> {
 				System.out.println("输入要下载的服务端版本号(1.14.4及以上)");
-				serverVersion = Enter.next();
+				serverVersion = enter.next();
 				//要求输入服务端版本,并保存到服务端版本变量内
 				downloadLink = "https://api.purpurmc.org/v2/purpur/" + serverVersion + "/latest/download";
 			}
 			case 3 -> {
 				System.out.println("输入要下载的服务端版本号(1.0.0及以上)");
-				serverVersion = Enter.next();
+				serverVersion = enter.next();
 				//要求输入服务端版本,并保存到服务端版本变量内
 
 				System.out.println("服务端版本是否小于或等于1.16.5?(是填true,否填false)");
-				cdn = Enter.nextBoolean();
+				cdn = enter.nextBoolean();
 				//Getbukkit中大于1.16.5(包括)二级域名是download.小于1.16.5二级域名是cdn
 
 				if (!cdn) {
@@ -63,11 +64,11 @@ public class Main {
 			}
 			case 4 -> {
 				System.out.println("输入要下载的服务端版本号(1.0.0及以上)");
-				serverVersion = Enter.next();
+				serverVersion = enter.next();
 				//要求输入服务端版本,并保存到服务端版本变量内
 
 				System.out.println("服务端版本是否小于或等于1.16.5?(是填true,否填false)");
-				cdn = Enter.nextBoolean();
+				cdn = enter.nextBoolean();
 				//Getbukkit中大于1.16.5(包括)二级域名是download.小于1.16.5二级域名是cdn
 
 				if (!cdn) {
@@ -78,7 +79,7 @@ public class Main {
 			}
 			case 5 -> {
 				System.out.println("输入要下载的版本号(1.12.2或1.16.5)");
-				serverVersion = Enter.next();
+				serverVersion = enter.next();
 				//要求输入服务端版本,并保存到服务端版本变量内
 
 				downloadLink = "https://mohistmc.com/api/" + serverVersion + "/latest/download";
@@ -86,22 +87,22 @@ public class Main {
 			//下载服务端并变量
 			case 6 -> {
 				System.out.println("输入要下载的版本号(1.14及以上)");
-				serverVersion = Enter.next();
+				serverVersion = enter.next();
 				//要求输入服务端版本,并保存到服务端版本变量内
 
 				System.out.println("输入要下载的Fabric版本(可使用启动器查看或输入'0.14.13')");
-				String fabricVersion = Enter.next();
+				String fabricVersion = enter.next();
 				downloadLink = "https://meta.fabricmc.net/v2/versions/loader/" + serverVersion + "/" + fabricVersion + "/0.11.1/server/jar";
 			}
 			//下载服务端并变量
 			case 7 -> {
 				System.out.println("输入服务端大版本(仅可输入alpha beta classic)");
-				oldVersion = Enter.next();
+				legacyServer = enter.next();
 				System.out.println("输入服务端版本(alpha输入'a0.x.x'" +
 						" beta输入'b1.x.x' " +
 						"classic输入c1.x.x)");
-				serverVersion = Enter.next();
-				downloadLink = "https://files.betacraft.uk/server-archive/" + oldVersion + "/" + serverVersion + ".jar";
+				serverVersion = enter.next();
+				downloadLink = "https://files.betacraft.uk/server-archive/" + legacyServer + "/" + serverVersion + ".jar";
 			}
 			//下载服务端并变量
 			case 8 -> {
@@ -110,18 +111,20 @@ public class Main {
 			}
 			case 9 ->{
 				System.out.println("请输入服务端版本(如1.19.63.01)");
-				serverVersion = Enter.next();
+				serverVersion = enter.next();
 				downloadLink = "https://minecraft.azureedge.net/bin-win/bedrock-server-" + serverVersion + ".zip";
 			}
 			case 10->{
 				System.out.println("输入要下载的版本号(1.1及以上)");
-				serverVersion = Enter.next();
+				serverVersion = enter.next();
 				//要求输入服务端版本,并保存到服务端版本变量内
 
 				System.out.println("输入要下载的Forge版本(可使用启动器查看)");
-				String forgeVersion = Enter.next();
+				String forgeVersion = enter.next();
 				downloadLink = "https://maven.minecraftforge.net/net/minecraftforge/forge/" + serverVersion +"-" + forgeVersion +"/forge-"  + serverVersion + "-" + forgeVersion +"-installer.jar";
+
 			}
+
 		}
 		//判断服务端类型
 		System.out.println("下载中，请稍后");
@@ -134,7 +137,7 @@ public class Main {
 		snail.lockDownload();
 		System.out.println("下载完成,服务端在download目录里");
 		System.out.println("<输入任意字符并按回车键退出...>");
-		Enter.next();
+		System.exit(0);
 		//EXIT
 	}
 }
