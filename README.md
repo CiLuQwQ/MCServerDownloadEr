@@ -1,7 +1,7 @@
 ### MC服务端下载器
 这是一个命令行Minecraft服务端下载器，可下载各种服务端
 此程序与Mojang Studios没有任何关联。
-### 使用的API
+### 下载API
 原版服务端国内源由BMCLAPI和MCBBS提供高速下载服务.BMCLAPI为公益服务.赞助BMCLAPI可以帮助作者提供更好的高速下载服务
 赞助BMCLAPI:https://afdian.net/a/bangbang93
 其他请见docs目录下的API.
