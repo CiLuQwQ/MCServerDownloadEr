@@ -20,3 +20,5 @@ mvn package
 ```
 ### 使用的开源项目
 [Snail（蜗牛）](https://github.com/acgist/snail)
+### 统计
+![Alt](https://repobeats.axiom.co/api/embed/5a2041fa80008940c3baaa6ed145af14348cf9df.svg "Repobeats analytics image")
