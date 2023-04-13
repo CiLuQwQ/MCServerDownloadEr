@@ -14,10 +14,12 @@ public class Main {
 		Scanner enter = new Scanner(System.in);
 		boolean cdn;
 		//初始化
-		System.out.println("MC服务端下载器[新] 1.1.0");
+		System.out.println("MC服务端下载器 1.2.0");
 		System.out.println("采用GNU GPLv3协议分发,并含有附加条款");
 		System.out.println("原版服务端国内源由BMCLAPI和MCBBS提供高速下载服务.BMCLAPI为公益服务.赞助BMCLAPI可以帮助作者提供更好的高速下载服务");
 		System.out.println("赞助BMCLAPI:https://afdian.net/a/bangbang93");
+		System.out.println("使用的开源项目：");
+		System.out.println("Snail(蜗牛)：https://github.com/acgist/snail");
 		System.out.println("其他见开源地址https://github.com/7777a2333/MCServerDownloadEr");
 		//显示说明
 		int type;
