@@ -97,7 +97,7 @@ public class Main {
 				serverVersion = enter.next();
 				//要求输入服务端版本,并保存到服务端版本变量内
 
-				System.out.println("输入要下载的Fabric版本(可使用启动器查看或输入'0.14.13')");
+				System.out.println("输入要下载的Fabric版本(可使用启动器查看或直接输入'0.14.19')");
 				String fabricVersion = enter.next();
 				downloadLink = "https://meta.fabricmc.net/v2/versions/loader/" + serverVersion + "/" + fabricVersion + "/0.11.1/server/jar";
 			}
