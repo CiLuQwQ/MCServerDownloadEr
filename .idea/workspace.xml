@@ -11,6 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e5e1d5f7-313f-4e58-9235-07a56aeedc16" name="变更" comment="Kotlin">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/API.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/API.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +64,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "ignore.preview.features.used": "true",
     "last_opened_file_path": "D:/MCreator20232/lib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -157,6 +161,7 @@
       <workItem from="1683722551096" duration="13000" />
       <workItem from="1683722597004" duration="1976000" />
       <workItem from="1683898236703" duration="53000" />
+      <workItem from="1684326061012" duration="1201000" />
     </task>
     <task id="LOCAL-00001" summary="fgvf">
       <created>1677243230591</created>
@@ -256,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683723978839</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Kotlin">
+      <created>1684326141303</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1684326141303</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

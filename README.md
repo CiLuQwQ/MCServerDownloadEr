@@ -1,6 +1,7 @@
 <h1 align="center">MC服务端下载器</h1>
 <p align="center">
 这是一个命令行Minecraft服务端下载器，可下载各种服务端
+
 </p>
 
 ### 运行
@@ -17,6 +18,24 @@
 附带附加条款
 [依据 GNU GPLv3第7条(b)](https://github.com/7777a2333/MCServerDownloadEr/blob/master/LICENSE#L368-L370)
 你**不得**移除本程序所显示的版权声明。
+```shell
+MCServerDownloadEr
+Copyright (C) 2023 7777a2333
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your function) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
+
 ## 构建
 使用idea打开项目，会自动下载Maven依赖项
 
